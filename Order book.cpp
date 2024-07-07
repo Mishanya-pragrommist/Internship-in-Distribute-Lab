@@ -149,7 +149,7 @@ int main()
     if (willTheTradeBe == 'y' || willTheTradeBe == 'Y') {
         show_balance_changes(myorder, matched_order);
     }
-    else std::cout << "Trade has been cancelled=(\n";
+    else if (willTheTradeBe == 'n' || willTheTradeBe == 'N') std::cout << "Trade has been cancelled=(\n";
 
     return 0;
 }
