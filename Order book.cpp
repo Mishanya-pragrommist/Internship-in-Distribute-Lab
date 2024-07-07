@@ -121,10 +121,7 @@ int main()
 
     Order myorder(user_id, amount, price, side);
     std::cout << "\nYour order:\n" << myorder << std::endl;
-
-    Order randomorder;
-    std::cout << "random order:\n" << randomorder << std::endl;
-
+    
     OrderBook orderbook;
     side == 0 ? orderbook.push_order_into_buying(&myorder)
         : orderbook.push_order_into_selling(&myorder);
